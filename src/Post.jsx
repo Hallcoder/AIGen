@@ -5,7 +5,7 @@ function Post2({pic,desc}) {
         <img src={pic} width="400px" height={"400px"}></img>
       </span>
       <span>
-        <h1>{desc}</h1>
+        <h1 className="font-semibold text-base">{desc}</h1>
       </span>
     </div>
   );

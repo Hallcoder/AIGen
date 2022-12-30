@@ -107,7 +107,7 @@ function App() {
             )}
           </button>
         </section>
-       {loading ? <Atom />: <Post pic={image} desc={text}/>}
+       {loading ? <Atom className="mt-40" color={"blue"}/>: <Post pic={image} desc={text}/>}
       </form>
     </div>
   );
