@@ -16,7 +16,7 @@ function App() {
   };
   const handleSubmit = (e) =>{
     e.preventDefault()
-    axios.post("http://localhost:3000/createPost",formData).then(data => {
+    axios.post("https://troubled-jade-chipmunk.cyclic.app/createPost",formData).then(data => {
 console.log(data.data);
 setImage(data.data.data.image)
     }).catch(err => console.error(err));
