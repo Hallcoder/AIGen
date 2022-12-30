@@ -53,6 +53,7 @@ function App() {
       .post("https://troubled-jade-chipmunk.cyclic.app/createPost", {file,...formData})
       .then(data => {
         if(data.data.data.image) setImage(data.data.data.image);
+        if(data.data.data.text) setText(data.data.data.text);
         setLoading(false);
       })
       .catch(err => {
@@ -106,7 +107,7 @@ function App() {
             )}
           </button>
         </section>
-        {image.length > 0 && <Post pic={image} />}
+       {loading ? <Atom />: <Post pic={image} desc={text}/>}
       </form>
     </div>
   );
