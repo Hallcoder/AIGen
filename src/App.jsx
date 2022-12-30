@@ -50,7 +50,7 @@ function App() {
     //     return
     // }
     axios
-      .post("http://localhost:3000/createPost", {file,...formData})
+      .post("https://troubled-jade-chipmunk.cyclic.app/createPost", {file,...formData})
       .then(data => {
         if(data.data.data.image) setImage(data.data.data.image);
         setLoading(false);
