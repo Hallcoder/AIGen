@@ -91,7 +91,7 @@ function App() {
               label={"Phone Number"}
               name={"telephone"}
             />
-            <SelectC label={"Type of image"} options={["Person","Animal","Vehicle","House","Player","Place","Artist"]} onChange={handleChange}/>
+            <SelectC label={"Type of image"} options={["Person","Animal","Vehicle","House","Player","Place","Artist","Poster"]} onChange={handleChange}/>
             <Input onChange={handleChange} label={"Email"} name={"email"} />
           
             <input type="file" onChange={handleFileChange} />
